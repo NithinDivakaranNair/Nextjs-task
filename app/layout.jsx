@@ -3,12 +3,20 @@ export const metadata = {
   description: 'Product page demo',
 };
 
+
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
+   
+   <html lang="en">
       <body>
         {children}
       </body>
     </html>
-  );
+    
+  )
 }
+
+
+
+

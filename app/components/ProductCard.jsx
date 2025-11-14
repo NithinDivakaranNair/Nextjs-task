@@ -1,13 +1,13 @@
-import React from 'react'
-
-const ProductCard = ({product}) => {
+const ProductCard = ({ product, onClick }) => {
   return (
-    <div>
+    <div
+      onClick={() => onClick(product)}
+      style={{ border: '1px solid #ccc', padding: '10px', marginBottom: '10px', cursor: 'pointer' }}
+    >
       <h3>{product.title}</h3>
       <p>{product.description}</p>
-      <p>{product.price}</p>
+      <p>${product.price}</p>
     </div>
-  )
-}
-
-export default ProductCard
+  );
+};
+export default ProductCard;

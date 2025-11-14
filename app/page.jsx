@@ -52,12 +52,12 @@ export default function Home() {
           placeholder="Search by title..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border rounded p-2 flex-1"
+  
         />
         <select
           value={sort}
           onChange={(e) => setSort(e.target.value)}
-          className="border rounded p-2"
+        
         >
           <option value="">Sort by price</option>
           <option value="low-high">Low → High</option>
@@ -69,7 +69,9 @@ export default function Home() {
 
       <div >
         {!loading && filtered.map(product => (
-          <ProductCard key={product.id} product={product} onClick={setSelectedProduct} />
+          <ProductCard   key={product.id} 
+        product={product} 
+        onClick={setSelectedProduct} />
         ))}
       </div>
 
