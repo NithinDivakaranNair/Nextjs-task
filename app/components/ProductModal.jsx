@@ -6,10 +6,7 @@ export default function ProductModal({ product, onClose }) {
   return (
     <div>
       <div>
-        <button
-         
-          onClick={onClose}
-        >
+        <button onClick={onClose}>
           x
         </button>
         <img
